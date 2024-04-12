@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()"
+      [formGroup]="loginForm" xmlns="http://www.w3.org/1999/html">
+  <label for="username">
+    Username
+  </label>
+  <input formControlName="username" id="username">
+  <label for="password">
+    Password
+  </label>
+  <input formControlName="password" id="password">
+  <button type="submit">Login</button>
+  <p>Don't have an account? <a routerLink="/register">Sign Up.</a></p>
+</form>
